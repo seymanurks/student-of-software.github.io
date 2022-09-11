@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#karşılama {
+    background: 
+    linear-gradient(to bottom, rgba(255, 204, 230, 0.2), rgba(255, 179, 218, 0.2)),
+    url('../img/dizi-arka-plan.jpeg');
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.foto-yazi {
+    background: rgba(46, 76, 109, 0.3);
+    opacity: background-color 0.3;
+    margin: 0;
+    padding: 20px;
+    width: 60%;
+    font-size: 25px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.main-header {
+    background-color: #F2D7D9;
+    padding: 8px 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 164px);
+}
+
+.main-nav__list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.main-nav__list--sağ {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 18px;
+}
+
+.main-header__sol {
+    color: #F185B3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main-nav__list--sağ a {
+    text-decoration: none;
+    color: #F185B3;
+    font-family: 'Square Peg', cursive;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.main-nav__list--sağ a:hover {
+    color: black;
+}
+
+.main-nav__list--sağ a:active {
+    color: #79DAE8;
+}
+
+.main-nav__list--sağ a::before {
+    content: '\2022';
+    letter-spacing: 5px;
+}
+
+.main-nav__li--giriş a::before {
+    content: none;
+}
+
+#izlenmek-istenilen {
+    padding: 10px;
+    text-align: center;
+}
+
+.satır {
+    margin-bottom: 40px;
+}
+
+#veriler .satır {
+    margin: 0;
+}
+
+#veriler .sütun-3 {
+    font-size: 20px;
+}
+
+#veriler div {
+    background: linear-gradient(to bottom, #F3d8DB 0%, #F185B3 100%) 
+}
+
+.satır::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sütun-3 {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 20px;
+}
+
+.sütun-2 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-color: black;
+}
+
+.ikon h3 {
+    font-size: 24px;
+}
+
+.dizi-içeriği {
+    margin-bottom: 40px;
+}
+
+.dizi-foto {
+    background: 
+    linear-gradient(to bottom, rgba(255, 204, 230, 0.2), rgba(255, 179, 218, 0.2)),
+    url('../img/senden-daha-güzel.jpeg');
+    background-color: #748DA6;
+    background-size: cover;
+    background-position: center;
+}
+
+.dizi-konu {
+    padding: 40px;
+    background-color: #B7D3DF;
+    vertical-align: top;
+}
+
+.dizi-foto, .dizi-konu {
+    height: 350px;
+}
+
+.dizi-konu h3 {
+    font-size: 27px;
+    margin-top: 0;
+}
+
+.plan {
+    text-align: center;
+    padding: 20px;
+}
+
+.inner-plan {
+    background-color: #B7D3DF;
+    padding: 20px 10px;
+    border-radius: 5px;
+    /* box-shadow: -5px 10px 20px 5px #888888; */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: box-shadow .6s;
+}
+
+.inner-plan:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.65);
+}
+
+.plan__badge {
+    background-color: #F2D7D9;
+    border: 2px solid #FFB4B4;
+    border-radius: 3px;
+    padding: 8px;
+
+}
+
+.plan h3, h4 {
+    text-align: center;
+}
+
+.onerilen-plan {
+    background-color: #8FBDD3;
+    position: relative;
+    bottom: 140px ;
+
+}
+
+.plan__ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan__ul li  {
+    margin: 6px 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1300px;
+    position: relative;
+}
+
+.container .plan {
+    margin-top: 150px;
+}
+
+.orta-baslik {
+    text-align: center; 
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+#backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#backtotop i {
+    font-size: 45px;
+    color: #6886C5;
+    transition: color .6s;
+}
+
+#backtotop i:hover {
+    color: #476bb8;
+}
